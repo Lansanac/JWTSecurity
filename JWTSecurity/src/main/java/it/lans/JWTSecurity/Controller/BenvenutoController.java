@@ -6,17 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/benvenuto")
+@RequestMapping("/api")
 public class BenvenutoController {
 
-
-    @GetMapping
+    @GetMapping("/benvenut")
     public ResponseEntity<String> home(){
         return ResponseEntity.ok("Ciao mio API!");
     }
 
-    @GetMapping("saluto")
-    public ResponseEntity<String> saluto(){
+    @GetMapping("/saluto")
+    public ResponseEntity<String> saluta(){
         return ResponseEntity.ok("Saluto monda a dopo!!");
     }
 }
